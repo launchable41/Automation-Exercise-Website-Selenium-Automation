@@ -50,7 +50,7 @@ public class UserManagement{
     @Test(dependsOnMethods = { "completeCreation" })
     public void deleteAccount(){
         new MenuItems(driver).deleteAccount();
-        new DeletedAccountPage(driver).assertAccountDeleted("ACCOUNT DELETED!")
+        new DeletedAccountPage(driver).assertAccountDeleted("ACCOUNT DELETED!E-commerce solutions")
                 .backToHomePage();
     }
     @AfterClass
